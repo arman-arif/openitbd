@@ -48,37 +48,8 @@
                             <li><a href="user-profile.php">My profile</a></li>
                             <li><a href="list-view-calendar.php">Activity</a></li>
                             <li><a href="mailbox.php">Messages</a></li>
-                            <li><a href="../login.php">Logout</a></li>
+                            <li><a href="?action=logout">Logout</a></li>
                         </ul>
-                    </div>
-                </li>
-                <li class="ttr-hide-on-mobile">
-                    <a href="#" class="ttr-material-button"><i class="ti-layout-grid3-alt"></i></a>
-                    <div class="ttr-header-submenu ttr-extra-menu">
-                        <a href="#">
-                            <i class="fa fa-music"></i>
-                            <span>Musics</span>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-youtube-play"></i>
-                            <span>Videos</span>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-envelope"></i>
-                            <span>Emails</span>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-book"></i>
-                            <span>Reports</span>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-smile-o"></i>
-                            <span>Persons</span>
-                        </a>
-                        <a href="#">
-                            <i class="fa fa-picture-o"></i>
-                            <span>Pictures</span>
-                        </a>
                     </div>
                 </li>
             </ul>

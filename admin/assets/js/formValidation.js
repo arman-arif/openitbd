@@ -1,4 +1,24 @@
+function loginFormValidate() {
+    var username = document.getElementById("username");
+    var password = document.getElementById("password");
+    var validate = true;
 
+    removeErrMsg();
+
+    if (username.value.trim() == ""){
+        validate = false;
+        username.classList.add("error-input");
+        username.nextElementSibling.innerHTML="Please enter a valid username";
+    }
+
+    if (password.value.trim() == ""){
+        validate = false;
+        password.classList.add("error-input");
+        password.nextElementSibling.innerHTML="Title should not be empty";
+    }
+
+    return validate;
+}
 
 function sliderFormValidate() {
     var title = document.getElementById("title");

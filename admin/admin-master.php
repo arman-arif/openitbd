@@ -6,6 +6,15 @@ require 'class/Database.php';
 $ofn = new Functions();
 $odb = new Database();
 
+if (isset($_GET['action'])){
+    $action = $_GET['action'];
+    if ($action == "logout"){
+        session_unset();
+        session_destroy();
+        header("Location: login.php");
+    }
+}
+
 require "include/header.php";
 
 

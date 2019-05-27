@@ -53,13 +53,14 @@
                     <h2 class="title-head">Login to <span>Admin Panel</span></h2>
                     <p>Login to the admin panel for manage the website</a></p>
                 </div>
-                <form class="contact-bx">
+                <form method="post" class="contact-bx" onsubmit="return loginFormValidate();">
                     <div class="row placeani">
                         <div class="col-lg-12">
                             <div class="form-group">
                                 <div class="input-group">
                                     <label for="username">Username</label>
                                     <input name="username" id="username" type="text" class="form-control">
+                                    <div class="error-msg"></div>
                                 </div>
                             </div>
                         </div>
@@ -68,6 +69,7 @@
                                 <div class="input-group">
                                     <label for="password">Password</label>
                                     <input name="password" id="password" type="password" class="form-control">
+                                    <div class="error-msg"></div>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +83,7 @@
                             </div>
                         </div>
                         <div class="col-lg-12 m-b30">
-                            <button name="submit" type="submit" value="Submit" class="btn button-md btn-block">Login</button>
+                            <button name="login" type="submit" class="btn button-md btn-block">Login</button>
                         </div>
                     </div>
                 </form>
@@ -103,7 +105,7 @@
 <script src="assets/vendors/masonry/filter.js"></script>
 <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="assets/js/functions.js"></script>
-<script src="assets/js/contact.js"></script>
+<script src="assets/js/formValidation.js"></script>
 
 </body>
 
