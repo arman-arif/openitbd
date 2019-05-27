@@ -3272,3 +3272,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
     width: 25%;
 }
 
+.account-form img{
+    width: 300px;
+}
