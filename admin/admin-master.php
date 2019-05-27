@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+require 'class/Connection.php';
 require 'class/Functions.php';
 require 'class/Database.php';
 

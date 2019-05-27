@@ -8,13 +8,13 @@ function loginFormValidate() {
     if (username.value.trim() == ""){
         validate = false;
         username.classList.add("error-input");
-        username.nextElementSibling.innerHTML="Please enter a valid username";
+        username.nextElementSibling.innerHTML="Please enter a valid username to login";
     }
 
-    if (password.value.trim() == ""){
+    if (password.value == ""){
         validate = false;
         password.classList.add("error-input");
-        password.nextElementSibling.innerHTML="Title should not be empty";
+        password.nextElementSibling.innerHTML="Password could not be empty";
     }
 
     return validate;

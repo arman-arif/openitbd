@@ -1,23 +1,27 @@
+<?php
+require 'class/Connection.php';
+require 'class/AdminLogin.php';
+$oal = new AdminLogin();
+
+if (isset($_POST['login'])){
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $oal->adminLogin($username, $password);
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
 
-    <!-- META ============================================= -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <meta name="robots" content="" />
-
-    <!-- DESCRIPTION -->
-    <meta name="description" content="EduChamp : Education HTML Template" />
-
 
     <!-- FAVICONS ICON ============================================= -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon.png" />
 
     <!-- PAGE TITLE HERE ============================================= -->
     <title>Open IT Ltd. : Admin Login</title>
